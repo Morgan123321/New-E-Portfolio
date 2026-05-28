@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 section {
     background-color: rgb(245,245,245);
 }
@@ -82,14 +86,27 @@ LANDING PAGE
     background-color: blue;
     color: white;
     padding: 6px;
-    width: 32 px;
+    width: 32px;
     height: 32px;
     font-size: 14px;
-    margin-right: 12;
+    margin-right: 12px;
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 50%;
+}
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
 }
 
 
