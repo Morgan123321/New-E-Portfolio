@@ -20,7 +20,8 @@ a {
     text-decoration: none;
 }
 
-button {
+button
+{
     cursor: pointer;
 }
 
@@ -107,6 +108,8 @@ LANDING PAGE
     position: absolute;
     bottom: 32px;
     right: 40px;
+    display: flex;
+    justify-content: center;align-items: center;
 }
 
 
