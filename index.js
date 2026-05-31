@@ -42,4 +42,7 @@ function contact(event) {
      success.classList.remove("modal__overlay--visible");
      document.body.classList += " modal--open";
   }
+  setTimeout (()=> {
+    success.classList.remove("modal__overlay--visible");
+  }, 3000);
 
