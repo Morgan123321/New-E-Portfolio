@@ -26,13 +26,14 @@ function contact(event) {
 
 }
 
- 
+ let isModalOpen = false;
+
   function toggleModal() {
     const success = document.querySelector('.modal__overlay--success');
        
     if (isModalOpen) {
         isModalOpen = false;
-        success.classList.remove('.modal__overlay--visible');
+        success.classList.remove("modal__overlay--visible");
        return document.body.classList.remove("modal--open");    
     } 
          
