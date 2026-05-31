@@ -309,7 +309,7 @@ MODAL
     transition: all 300ms ease-in;
 }
 
-.modal--open .modal__about
+.modal--open .modal__about,
 .modal--open .modal__contact {
     transform: translateX(0%)
 }
