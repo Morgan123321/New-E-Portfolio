@@ -4,21 +4,27 @@
 
 function contact(event) { 
     event.preventDefault();
-    // emailjs
-    // .sendForm(
-    //     'service_unxthal',
-    //     'template_6oomkop',
-    //     event.target,
-    //     'pP19id_5iI0771PQA'
-    // ).then(() => {
-    //             console.log('this worked1')
-    // })
     const loading = document.querySelector('.modal__overlay--loading')
     const success = document.querySelector('.modal__overlay--success')
-    loading.classList += " modal__overlay--visible";
-    setTimeout (() => {
+     loading.classList += " modal__overlay--visible";
+   
+     emailjs
+    .sendForm(
+    'service_unxthal',
+    'template_6oomkop',
+    event.target,
+    'pP19id_5iI0771PQA'
+    ).then(() => {
        loading.classList.remove("modal__overlay--visible");
        success.classList += " modal__overlay--visible";
-       console.log('it worked 1')
-    },1000);
+    }).catch(() => {
+        loading.classList.remove("modal__overlay--visible");
+        alert(
+            "The email server is down.  Please contact me directly at morgan.feeney1022@gmail.com"
+        );
+    })
+
 }
+
+  
+
