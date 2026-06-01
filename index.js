@@ -17,11 +17,15 @@ function contact(event) {
     ).then(() => {
        loading.classList.remove("modal__overlay--visible");
        success.classList += " modal__overlay--visible";
-    }).catch(() => {
+    
+    setTimeout (()=> {
+    success.classList.remove("modal__overlay--visible");
+  }, 3000);
+
+    })
+    .catch(() => {
         loading.classList.remove("modal__overlay--visible");
-        alert(
-            "The email server is down.  Please contact me directly at morgan.feeney1022@gmail.com"
-        );
+        alert("The email server is down.  Please contact me directly at morgan.feeney1022@gmail.com");
     })
 
 }
@@ -42,7 +46,4 @@ function contact(event) {
      success.classList.remove("modal__overlay--visible");
      document.body.classList += " modal--open";
   }
-  setTimeout (()=> {
-    success.classList.remove("modal__overlay--visible");
-  }, 3000);
-
+ 

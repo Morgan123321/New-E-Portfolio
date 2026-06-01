@@ -405,6 +405,10 @@ MODAL
 }
 
 .modal__overlay {
+     display: none;
+}
+
+.modal__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -432,8 +436,8 @@ MODAL
 }
 
 .modal__overlay--visible {
-    z-index: 1;
-    display: flex;
+       display: flex;
+        z-index: 1;
 }
 .fa-spinner {
  animation: spinner 750ms infinite linear;
