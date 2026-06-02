@@ -1,6 +1,19 @@
 //template_6oomkop
 //service_unxthal
 //pP19id_5iI0771PQA
+ let isModalOpen = false;
+ let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+    document.body.classList += " dark-theme"
+}
+else {
+    document.body.classList.remove("dark-theme")
+}
+}
+
 
 function contact(event) { 
     event.preventDefault();
@@ -30,7 +43,7 @@ function contact(event) {
 
 }
 
- let isModalOpen = false;
+
 
   function toggleModal() {
     const success = document.querySelector('.modal__overlay--success');
